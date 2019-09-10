@@ -18,8 +18,15 @@ $this->setFrameMode(true);
     <div class="sub_visual">
         <div class="visual_content">
             <div class="inner">
-                <h2>News &amp; Notice</h2>
-                <h3>Official news YVOIRE</h3>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/local/include/news-list/slide-title.php"
+                    )
+                ); ?>
                 <span class="page_navi left"><a href="/sns/"><img alt="LEFT PAGE"
                                                                   src="/local/templates/yvoire/images/icon/page_navigator_left.png"></a></span>
                 <span class="page_navi right"><a href="/faq/"><img alt="RIGHT PAGE"
@@ -75,16 +82,15 @@ $this->setFrameMode(true);
                             <li>
                                 <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>">
                                     <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
+                                        <? if ($arItem["PREVIEW_PICTURE"]!== NULL):?>
                                         <div class="thumbnail">
-                                            <img alt="NEWS LIST" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"><span
-                                                    class="more"></span>
+                                            <img alt="NEWS LIST" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"><span class="more"></span>
                                         </div>
-                                    <? else: ?>
-                                        <img alt="NEWS LIST" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"> <span
-                                                class="more"></span>
+                                        <? else: ?>
+                                            <img alt="no_photo" src="/local/templates/yvoire/images/no_photo.png?>"> <span class="more"></span>
+                                        <? endif; ?>
                                     <? endif; ?>
                                     <div class="thumbnail_txt">
-
                                         <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
                                             <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
                                                 <p class="tit"><? echo $arItem["NAME"] ?></p>
@@ -93,9 +99,8 @@ $this->setFrameMode(true);
                                             <? endif; ?>
                                         <? endif; ?>
 
-
                                         <div class="notice v-ellipsis">
-                                            <p><br><img src="" alt="" style="width: 800px; height: auto; "></p>
+                                            <p><br><img src="" alt="" style="width: 800px; height: auto;"></p>
                                         </div>
 
                                         <? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]): ?>
@@ -107,10 +112,13 @@ $this->setFrameMode(true);
                             </li>
                         <? endforeach; ?>
                     </ul>
+                </div>
+            </div>
                     <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
                         <br/><?= $arResult["NAV_STRING"] ?>
                     <? endif; ?>
-                    <!-- PAGING -->
                 </div>
             </div>
         </div>
+    </div>
+</div>

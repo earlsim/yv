@@ -21,11 +21,10 @@ $this->setFrameMode(true);
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));?>
 					<li>
 						<p>
- 						<a href="javascript:;"><span><?echo($arItem['PROPERTIES']['QUESTION']["VALUE"]['TEXT']);?></span><i></i></a>
+ 						<a href="javascript:void(0);"><span><?echo($arItem['PROPERTIES']['QUESTION']["VALUE"]['TEXT']);?></span><i></i></a>
 						</p>
 						<div class="reply">
 							<p><i></i><?echo(htmlspecialchars_decode($arItem['PROPERTIES']['ANSWER']["VALUE"]['TEXT']));?></p>
 						</div>
  					</li>
-
 <?endforeach;?>

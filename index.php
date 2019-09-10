@@ -58,10 +58,15 @@
 		    <div class="yvoire_story">
 			<!-- title area -->
 			<div class="story_tit">
-			    <h2 class="aCenter">
-				<p>NATURALLY RESHAPED<br/>BEAUTIFULLY REDEFINED</p>
-				<p>YVOIRE SNS</p>
-			    </h2>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/local/include/index/title_sns.php"
+                    )
+                ); ?>
 			    <div class="iconBox aCenter">
 				<ul>
 				    <li><img src="/local/templates/yvoire/images/icon/txt_facebook.png" alt="facebook icon" /></li>

@@ -8,8 +8,15 @@ $APPLICATION->SetTitle("Why YVOIRE");
         <div class="sub_visual">
             <div class="visual_content">
                 <div class="inner">
-                    <h2>Why YVOIRE</h2>
-                    <h3>From HA raw material to end product<p>by LG Chem</p></h3>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/why_yv/slide-title.php"
+                        )
+                    ); ?>
                     <span class="page_navi left"><a href="/brand/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
                     <span class="page_navi right"><a href="/yvoire/"><img
@@ -52,19 +59,26 @@ $APPLICATION->SetTitle("Why YVOIRE");
                 <div class="section">
                     <div class="inner">
                         <div>
-                            <p class="tit">Distinguished HA raw materials</p>
-                            <p class="gap">LG Chem has developed and manufactured hyaluronic acid pharmaceutical
-                                products 25 years.</p>
-                            <p>
-                                <span class="years">1990</span><span>HA R&D started with Producer Strain Development</span>
+                            <p class="tit">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include/why_yv/section-1-title.php"
+                                    )
+                                ); ?>
                             </p>
-                            <p><span class="years">1995</span><span>Hyal 2000<span class="suffix">Ⓡ</span> Inj.,1st HA Ophthalmic Viscoelastics launchedin Korea Hyruan plus<span
-                                            class="suffix">Ⓡ</span> Inj., 1st 3-Injection HA Osteoarticular</span></p>
-                            <p><span class="years">2000</span><span>Viscosupplement launched in Korea</span></p>
-                            <p><span class="years">2010</span><span>YVOIRE<span class="suffix">Ⓡ</span>, 1st Cross-linked HA Filler launched in Korea</span>
-                            </p>
-                            <p><span class="years">2013</span><span>YVOIRE<span class="suffix">Ⓡ</span> plus, 1st HA Filler with Lidocaine launched in Korea</span>
-                            </p>
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/why_yv/section-1-text-1.php"
+                                )
+                            ); ?>
                         </div>
                         <div>
                             <ul>
@@ -75,20 +89,26 @@ $APPLICATION->SetTitle("Why YVOIRE");
                                          alt="YVOIRE MATERIALS" class="mobile"/>
                                 </li>
                                 <li>
-                                    <p class="subtit">Authorized quality</p>
-                                    <p>Reliable HA material listed to US<i class="fda"><img
-                                                    src="/local/templates/yvoire/images/sub/haofyvoire/fda.jpg"
-                                                    alt="FDA"/></i>DMF <b>1)</b></p>
-                                    <p class="edom">and certificated by<i class="edom"><img
-                                                    src="/local/templates/yvoire/images/sub/haofyvoire/edom.jpg"
-                                                    alt="FDA"/></i>DMF <b>2)</b></p>
-                                    <p>
-                                        LG Chems’ non-animal origin HA has been marketed in various medical
-                                        fields since 1995 with proven safety and efficacy.
-                                        Its high molecular weight HA has been approved by
-                                        the European Directorate for the Quality of Medicinesand its drug master
-                                        file has been filed to the US FDA.
-                                    </p>
+                                    <p class="subtit">
+                                        <? $APPLICATION->IncludeComponent(
+                                            "bitrix:main.include",
+                                            "",
+                                            Array(
+                                                "AREA_FILE_SHOW" => "file",
+                                                "EDIT_TEMPLATE" => "",
+                                                "PATH" => "/local/include/why_yv/section-1-subtitle.php"
+                                            )
+                                        ); ?>
+                                        </p>
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/why_yv/section-1-text-2.php"
+                                        )
+                                    ); ?>
                                 </li>
                             </ul>
                         </div>
@@ -97,12 +117,27 @@ $APPLICATION->SetTitle("Why YVOIRE");
                 <div class="section">
                     <div class="inner">
                         <div>
-                            <p class="tit">HICE<span class="suffix">TM</span> Cross-linking Technology</p>
+                            <p class="tit">
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include/why_yv/section-2-title.php"
+                                    )
+                                ); ?>
+                            </p>
                             <p>
-                                HICE<span class="suffix">TM</span> Cross-linking Technology, which enables to reach the
-                                maximum cross-linking ratio despite of “minimal use of cross-linkers” by dispersing the
-                                cross-linkers into
-                                highly concentrated HA during cross-linking reaction.
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include/why_yv/section-2-text-1.php"
+                                    )
+                                ); ?>
                             </p>
                             <div style="margin-top:1rem;">
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img03.png"
@@ -119,7 +154,17 @@ $APPLICATION->SetTitle("Why YVOIRE");
                             </div>
                         </div> -->
                         <div>
-                            <p>Cross-linking ratio of HA filler products</p>
+                            <p>
+                                <? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "",
+                                    Array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "EDIT_TEMPLATE" => "",
+                                        "PATH" => "/local/include/why_yv/section-2-text-2.php"
+                                    )
+                                ); ?>
+                            </p>
                             <div style="margin-top:1rem;">
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img05.png"
                                      alt="HICE Cross-linking Technology" class="pc"/>

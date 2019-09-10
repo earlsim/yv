@@ -15,8 +15,15 @@ $APPLICATION->SetTitle("LG Chem");
         <div class="sub_visual">
             <div class="visual_content">
                 <div class="inner">
-                    <h2>LG Chem</h2>
-                    <h3>To be a global leader<p>Growing with customers by providing innovative materials and solutions</p></h3>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/lgchem/slide-title.php"
+                        )
+                    ); ?>
                     <span class="page_navi left"><a href="/lggroup/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
                     <span class="page_navi right"><a href="/brand/"><img
@@ -48,29 +55,51 @@ $APPLICATION->SetTitle("LG Chem");
                     <div class="inner">
                         <ul>
                             <li>
-                                <p class="tit">Life Sciences<br/>company</p>
+                                <p class="tit">
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/lgchem/section-title.php"
+                                        )
+                                    ); ?>
+                                    </p>
                                 <p>
-                                    Having continued to grow over 7 decades since founded in 1947, LG Chem is literally
-                                    the company leading the chemical industry in Korea.
-                                    The company has strengthened market dominance starting from the Basic Materials &
-                                    Chemicals business to Energy Solution, IT and Electronic Materials and has expanded
-                                    its business into Life Science area, building a future-oriented business portfolio.
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/lgchem/section-text-1.php"
+                                        )
+                                    ); ?>
                                 </p>
                             </li>
                             <li>
                                 <p style="margin-bottom:2rem;">
-                                    LG Chem helps the people to lead a healthy life by strengthening its R&D competence
-                                    in Life Sciences.
-                                    Life Sciences is the company's new growth engine in the mid to long term goal.
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/lgchem/section-text-2.php"
+                                        )
+                                    ); ?>
                                 </p>
                                 <p>
-                                    The company has secured the differentiated R&D competence and has received the U.S.
-                                    FDA approval for its new drugs for the first time in Korea.
-                                    Based on our superior biotechnology and R&D capabilities accumulated since 1980s, we
-                                    have been successful in developing a variety of original products including Korea's
-                                    first growth hormone for children, new drugs for diabetes, etc. At the same time, we
-                                    have continuously expanded our
-                                    competitive edge through cooperation with global pharmaceutical companies.
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/lgchem/section-text-3.php"
+                                        )
+                                    ); ?>
                                 </p>
                             </li>
                         </ul>
@@ -87,7 +116,17 @@ $APPLICATION->SetTitle("LG Chem");
                     </div>
                 </div>
                 <div class="lgchem_business">
-                    <p class="tit">Life Sciences company’s<br/>Main Business</p>
+                    <p class="tit">
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/local/include/lgchem/section-2-title.php"
+                            )
+                        ); ?>
+                    </p>
                     <div class="inner">
                         <img src="/local/templates/yvoire/images/sub/lgchem/business_img01.png"
                              alt="LG Chem-Life Science’s Main Business" class="pc"/>

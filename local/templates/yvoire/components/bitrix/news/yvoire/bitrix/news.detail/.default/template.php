@@ -11,6 +11,14 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+$pictureArr = ($arResult['DISPLAY_PROPERTIES']["CONTENT_PICTURE"]["DISPLAY_VALUE"]);?>
+<? $currHost = $_SERVER["HTTP_HOST"]?>
+<? if (CMain::IsHTTPS() == true) {
+    $protocol = 'https://';
+} else {
+    $protocol = 'http://';
+}
+
 ?>
 <!-- container -->
 <div class="container subPage ctx_newsview">
@@ -62,8 +70,6 @@ $this->setFrameMode(true);
                         <input type="hidden" name="lang" value="ko"> <input type="hidden" name="page" id="page" value="1"> <input type="hidden" name="bt"
                                                                                                                                   value="1">
                     </form>
-
-
                     <div class="newsview_conbody">
                         <div class="newsview_detail">
                             <div class="inner">
@@ -87,32 +93,36 @@ $this->setFrameMode(true);
                                     -->
                                 </div>
                                 <div class="notice">
-
-
                                     <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arResult["DETAIL_PICTURE"])): ?>
                                         <div class="notice_thumb">
-                                            <img
-                                                    src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>"
-                                                    alt="<?= $arResult["DETAIL_PICTURE"]["ALT"] ?>"
-                                                    title="<?= $arResult["DETAIL_PICTURE"]["TITLE"] ?>"
-                                            />
+                                            <img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt="<?= $arResult["DETAIL_PICTURE"]["ALT"] ?>"
+                                                 title="<?= $arResult["DETAIL_PICTURE"]["TITLE"] ?>"/>
                                         </div>
-                                    <? endif ?>
+                                    <?else:?>
 
-                                    <p><br/>
-                                        <img alt="" src="" style="width: 800px; height: auto; "/>
+                                    <? endif ?>
+                                    <p class="test">
+                                        <?if (is_array($pictureArr) == 1):?>
+                                            <?foreach($pictureArr as $value):?>
+                                                <?$src = explode('"', $value);?>
+                                                <?$src = $src[1];?>
+                                                <?$url = $protocol . $currHost . $src;?>
+                                            <div style="width:800px">
+                                                <img src="<?echo $url;?>" alt="">
+                                            </div>
+                                            <?endforeach?>
+                                        <?else:?>
+                                            <?$src = explode('"', $pictureArr)?>
+                                            <?$src = $src[1];?>
+                                            <?$url = $protocol . $currHost . $src;?>
+                                            <div style="width:800px">
+                                                <img src="<?echo $url;?>" alt="">
+                                            </div>
+                                        <?endif?>
                                     </p>
                                     <p>
-                                        <? $pictureArr = ($arResult['DISPLAY_PROPERTIES']["CONTENT_PICTURE"]["DISPLAY_VALUE"]);
-
-                                        foreach ($pictureArr as $value) {
-                                            $src = explode('"', $value);
-                                            $src = $src[1];
-                                        }
-                                        ?>
-
+                                        <? echo($arResult["DETAIL_TEXT"]);?>
                                     </p>
-
                                 </div>
                             </div>
                             <!-- MOVE LIST -->
@@ -128,3 +138,6 @@ $this->setFrameMode(true);
                 <!-- //contents -->
             </div>
             <!-- //container -->
+        </div>
+    </div>
+</div>

@@ -25,8 +25,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?".$arResult["Nav
 <div class="paging">
     <div class="inner">
         <div class="text">
-
-<?if($arResult["bDescPageNumbering"] === true):?>
+            <?if($arResult["bDescPageNumbering"] === true):?>
 
 
 	<?if ($arResult["NavPageNomer"] < $arResult["NavPageCount"]):?>
@@ -114,8 +113,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?".$arResult["Nav
 
 <?endif?>
 
-
-<?if ($arResult["bShowAll"]):?>
+            <?if ($arResult["bShowAll"]):?>
 <noindex>
 	<?if ($arResult["NavShowAll"]):?>
 		|&nbsp;<a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>SHOWALL_<?=$arResult["NavNum"]?>=0" rel="nofollow">по стр.</a>
@@ -124,6 +122,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?".$arResult["Nav
 	<?endif?>
 </noindex>
 <?endif?>
+        </div>
     </div>
 </div>
 <!-- //PAGING -->

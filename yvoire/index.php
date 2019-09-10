@@ -31,8 +31,15 @@ $APPLICATION->SetTitle("YVOIRE");
         <div class="sub_visual">
             <div class="visual_content">
                 <div class="inner">
-                    <h2>Product</h2>
-                    <h3>Various properties provide a complete treatment.</h3>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/yvoire/slide-title.php"
+                        )
+                    ); ?>
                     <span class="page_navi left"><a href="/whyyvoire/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
                     <span class="page_navi right"><a href="/review/"><img
@@ -63,12 +70,42 @@ $APPLICATION->SetTitle("YVOIRE");
                 <div class="inner">
                     <div class="tab_list">
                         <ul>
-                            <li class="active"><a href="javascript:;">YVOIRE</a></li>
-                            <li><a href="javascript:;">Y-SOLUTION</a></li>
+                            <li class="active"><a href="javascript:;">
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/yvoire/tab-1.php"
+                                        )
+                                    ); ?>
+                                </a></li>
+                            <li><a href="javascript:;">
+                                    <? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/local/include/yvoire/tab-2.php"
+                                        )
+                                    ); ?>
+                                </a></li>
                         </ul>
                     </div>
                     <div class="listbox yvoire">
-                        <p class="tit">YVOIRE<span class="suffix">Ⓡ</span> Products</p>
+                        <p class="tit">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/yvoire/yvoire-products.php"
+                                )
+                            ); ?>
+                        </p>
                         <!-- <p class="subtit">YVOIREⓇ provides diverse product options meeting the needs of doctors and patients</p>-->
                         <div class="tbl_list classic">
                             <table>
@@ -200,13 +237,26 @@ $APPLICATION->SetTitle("YVOIRE");
                             physical properties</p>
                     </div>
                     <div class="listbox solution blind">
-                        <p class="tit">Y-Solution<span class="suffix">TM</span> Products</p>
-                        <p class="subtit">Y-Solution expresses the new property of Yvoire® with high elasticity and
-                            cohesiveness.</p>
-                        <p class="subtit">The Y in Y-Solution stands for You, Young, and Youth, and Solution signifying
-                            the solution for anti-aging.</p>
-                        <p class="subtit">Y-Solution is divided into three steps of product line-up [360-540-720]
-                            depending on the different property.</p>
+                        <p class="tit">
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/yvoire/y-solutions.php"
+                                )
+                            ); ?>
+                        </p>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/local/include/yvoire/y-solutions-text.php"
+                            )
+                        ); ?>
                         <div class="tbl_list pc">
                             <table>
                                 <tbody>

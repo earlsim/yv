@@ -13,8 +13,15 @@ $APPLICATION->SetTitle("SNS");
         <div class="sub_visual">
             <div class="visual_content">
                 <div class="inner">
-                    <h2>SNS</h2>
-                    <h3>Check out YVOIRE worldwide.</p></h3>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/sns/slide-title.php"
+                        )
+                    ); ?>
                     <span class="page_navi left"><a href="/review/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
                     <span class="page_navi right"><a href="/news_list/"><img

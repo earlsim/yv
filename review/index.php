@@ -14,13 +14,29 @@ $APPLICATION->SetTitle("Review");
                 <div class="sub_visual">
                     <div class="visual_content">
                         <div class="inner">
-                            <h2>REVIEW</h2>
-                            <h3>We show you frequently asked questions<p>about LG Chem's YVOIRE Filler</p></h3>
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/review/slide-title.php"
+                                )
+                            ); ?>
                             <span class="page_navi left"><a href="/yvoire/"><img src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE" /></a></span>
                             <span class="page_navi right"><a href="/sns/"><img src="/local/templates/yvoire/images/icon/page_navigator_right.png" alt="RIGHT PAGE" /></a></span>
                         </div>
                         <div class="inner blind">
-                            <h2>Experience<br/>YVOIRE Filler</h2>
+                            <? $APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/review/slide-title-2.php"
+                                )
+                            ); ?>
+
                             <span class="page_navi left"><a href="/yvoire/"><img src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE" /></a></span>
                             <span class="page_navi right"><a href="/sns/"><img src="/local/templates/yvoire/images/icon/page_navigator_right.png" alt="RIGHT PAGE" /></a></span>
                         </div>
@@ -65,12 +81,27 @@ $APPLICATION->SetTitle("Review");
 				<div class="movie_procedure">
                                     <iframe src="https://www.youtube.com/embed/YvH8QUei9sM?rel=0&autoplay=1" frameborder="0" scrolling="no" allowfullscreen></iframe>
                                 </div>
-				<p class="tit">Why do I choose YVOIRE?</p>
+				<p class="tit">
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/review/section-title-1.php"
+                        )
+                    ); ?>
+                </p>
 				<p class="notice">
-				    Do you wonder why doctors all over the world choose Yvoire? 
-				    Dr. Salvatore Fundaro and Dr. Francesco Romeo, plastic surgeons 
-				    in Italy, and the cosmetologist Dr. Oksana Pavlenko from Russia, 
-				    have all used Yvoire for many years, and now they will tell you why.
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/include/review/section-text-1.php"
+                        )
+                    ); ?>
 				</p>
 			    </div>
 			    <div class="listbox beforeafter blind">
