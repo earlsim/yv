@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "YVOIRE - Why Yvoire");
 $APPLICATION->SetTitle("Why YVOIRE");
 ?>
     <!-- container -->

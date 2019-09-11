@@ -1,29 +1,36 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"О компании", 
-		"about/", 
+		"LG", 
+		"/lggroup", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Новости", 
-		"news/", 
+		"YVOIRE", 
+		"/brand", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Услуги", 
-		"services/", 
+		"REVIEW", 
+		"/review", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Контакты", 
-		"contacts/", 
+		"SNS & NEWS", 
+		"/sns", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"FAQ", 
+		"/faq", 
 		Array(), 
 		Array(), 
 		"" 

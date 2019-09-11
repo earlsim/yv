@@ -213,7 +213,7 @@ span.arrow.right {right:0;}
 .header .gnb .inner>div>ul>li {float:left; margin-right:6rem; overflow:visible;}
 .header .gnb .inner>div>ul>li:last-child {margin-right:0;}
 .header .gnb .inner>div>ul>li>a {position:relative; font-weight:300; font-size:1.3rem; color:#333;}
-.header .gnb .inner>div>ul>li.active>a {border-bottom:0px solid #f16681; padding-bottom:.2rem;}
+.header .gnb .inner>div>ul>li.active>a {border-bottom:0 solid #f16681; padding-bottom:.2rem;}
 .header .gnb .menu>ul>li.onlink>a {color:#f16681 !important;}
 
 .header .gnb .gnbDepth {padding-bottom:3rem;}

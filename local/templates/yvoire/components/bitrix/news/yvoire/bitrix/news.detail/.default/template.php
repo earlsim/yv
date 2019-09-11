@@ -101,7 +101,7 @@ $pictureArr = ($arResult['DISPLAY_PROPERTIES']["CONTENT_PICTURE"]["DISPLAY_VALUE
                                     <?else:?>
 
                                     <? endif ?>
-                                    <p class="test">
+                                    <p class="content">
                                         <?if (is_array($pictureArr) == 1):?>
                                             <?foreach($pictureArr as $value):?>
                                                 <?$src = explode('"', $value);?>

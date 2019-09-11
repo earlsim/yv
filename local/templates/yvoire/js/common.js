@@ -21,7 +21,7 @@ var gnbEvent = {
             
             $(".header .gnb .m_top>ul>li").eq(1).find("a").on("click",function(){
                $(".header .gnb .m_menu .m_menu_bg").stop().animate({ right:"-80%" },200,function(){
-                   $(".header .gnb .m_menu").css("display","none"); 
+                   $(".header .gnb .m_menu").css("display","none");
                    $(".header .gnb .m_list>ul>li").removeClass("active");
                    $(".header .gnb .m_menu .m_list ul li .m_list02").slideUp(0);
                    $(this).find("span.more").text("+");
@@ -114,7 +114,7 @@ var gnbEvent = {
             $(".header .gnb .menu>ul>li").removeClass("onlink");
             $(this).parent().addClass("onlink");
         });
-        
+
         $(".header .gnb .gnbDepth .depth_list>ul>li ul li a").on("click",function(){
             gnbIdx = $(this).parent().parent().parent().index()+1;
             depthIdx = $(this).parent().index();
@@ -129,7 +129,7 @@ var gnbEvent = {
     showActive:function(){
     	var curLoc = location.href.split("/");
     	var locLastIdx = curLoc.length-1;
-    	var compareLoc = curLoc[locLastIdx].split(".html")[0];
+    	var compareLoc = curLoc[locLastIdx].split(".php")[0];
     	if(compareLoc == "index"){
     		sessionStorage.removeItem("gnbIdx");
     		sessionStorage.removeItem("depthIdx");
