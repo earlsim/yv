@@ -65,7 +65,7 @@ $APPLICATION->SetTitle("SNS");
 						<ul id="facebookfeed">
 						</ul>
 						<div class="btn_type02">
- <span class="hEffect"></span> <a href="https://www.facebook.com/yvoire.official.global" target="_blank" class="btn-1">FACKBOOK</a>
+ <span class="hEffect"></span> <a href="https://www.facebook.com/yvoire.official.global" target="_blank" class="btn-1">FACEBOOK</a>
 						</div>
 					</div>
 					<div class="listbox instaList">

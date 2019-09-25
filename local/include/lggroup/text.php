@@ -1,26 +1,3 @@
-<p>
-    Since its establishment in 1947, LG Group has contributed to the improvement of
-    people�s
-    living culture and Korean culture, as well as the development of industry and
-    economy,
-    by being a pioneer of the chemical and electronics industry for the first time in
-    Korea.
-</p>
-<p>
-    Additionally, in 1982, LG Group established the manufacturing company called GSAI
-    in Huntsville, USA, for the first time among Korean companies, opening a new chapter
-    in the industrial development history of Korea. In the 1980�s, LG has concentrated
-    on the globalization and development of innovative technology to inform the world
-    about
-    its technology.
-</p>
-<p>
-    Currently, LG Group leads a new lifestyle in the world, improving the life of people
-    in more than
-    60 countries in Asia, North America, Europe, and Africa. LG Group is leading this
-    trend in four
-    businesses including chemistry & energy, electronics & information, communications,
-    and financial
-    services. LG Group will continue to lead change in the future, based on its 70 years
-    of achievements.
-</p>
+<p>Будучи пионером в химической и электронной промышленности Южной Кореи, LG Group с момента своего основания в 1947 г. вносит свой вклад в развитие индустрии, экономики и культуры.</p>
+<p>В 1982 г. LG Group первой из корейских компаний основала производство под названием GSAI в Хантсвилле, США, открыв новую главу в истории промышленного развития Кореи. В 1980-х LG направила усилия на глобализацию и развитие инновационной технологии, чтобы заявить о своих достижениях в мировом масштабе.</p>
+<p>Сегодня технологии от LG Group представлены более чем в 60 странах Азии, Северной Америки, Европы и Африки. Опираясь на 70-летний опыт работы, LG Group развивает свое лидерство в нескольких направлениях бизнеса: химии, энергетике, электронике, коммуникативных технологиях и финансовых услугах.</p>

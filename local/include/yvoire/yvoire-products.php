@@ -1,1 +1,1 @@
-YVOIRE<span class="suffix">Ⓡ</span>Products
+Препараты YVOIRE<span class="suffix">Ⓡ</span>

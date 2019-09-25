@@ -1,2 +1,2 @@
-<h2>REVIEW</h2>
-<h3>We show you frequently asked questions<p>about LG Chem's YVOIRE Filler</p></h3>
+<h2>ОБЗОР</h2>
+<h3>Ответы на часто задаваемые вопросы<p>касаемо филлеров Yvoire от LG Chem</p></h3>

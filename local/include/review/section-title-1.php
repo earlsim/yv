@@ -1,1 +1,1 @@
-Why do I choose YVOIRE?
+Почему я выбираю Yvoire?

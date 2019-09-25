@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("YVOIRE - Brand Story");
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/local/include/brand/slide-title.php"
 	)
-);?> <span class="page_navi left"><a href="/lgchem/" title="lg chem"><img alt="LEFT PAGE" src="/local/templates/yvoire/images/icon/page_navigator_left.png"></a></span> <span class="page_navi right"><a href="/whyyvoire/" title="why yvoire"><img alt="RIGHT PAGE" src="/local/templates/yvoire/images/icon/page_navigator_right.png"></a></span>
+);?> <span class="page_navi left"><a href="/lgchem/" title="lg chem"><img alt="ЛЕВАЯ СТРАНИЦА" src="/local/templates/yvoire/images/icon/page_navigator_left.png"></a></span> <span class="page_navi right"><a href="/whyyvoire/" title="why yvoire"><img alt="ПРАВАЯ СТРАНИЦА" src="/local/templates/yvoire/images/icon/page_navigator_right.png"></a></span>
 			</div>
 		</div>
 	</div>
@@ -25,26 +25,26 @@ $APPLICATION->SetTitle("YVOIRE - Brand Story");
 		 <!-- location -->
 		<div class="location">
 			<div class="inner">
-				<div>
-					<ul>
-						<li class="home"><img alt="home" src="/local/templates/yvoire/images/icon/location.png"> </li>
-						<li>
-						<p>
-							YVOIRE
-						</p>
-						</li>
-						<li class="step">
-						<p>
-							&gt;
-						</p>
-						</li>
-						<li>
-						<p>
-							Brand Story
-						</p>
-						</li>
-					</ul>
-				</div>
+                <div>
+                    <ul>
+                        <li class="home"><img alt="На главную" src="/local/templates/yvoire/images/icon/location.png"></li>
+                        <li>
+                            <p>
+                                YVOIRE
+                            </p>
+                        </li>
+                        <li class="step">
+                            <p>
+                                &gt;
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                История бренда
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 			</div>
 		</div>
 		 <!-- //location -->
@@ -52,15 +52,15 @@ $APPLICATION->SetTitle("YVOIRE - Brand Story");
 			<div class="inner">
 				<div class="txt_area">
 					<p class="tit">
-						 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/include/brand/section-1-title.php"
-	)
-);?>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/local/include/brand/section-1-title.php"
+                            )
+                        ); ?>
 					</p>
 					<div class="notice">
 						<ul>
@@ -145,15 +145,15 @@ $APPLICATION->SetTitle("YVOIRE - Brand Story");
 				</div>
 				<div class="txt_area third">
 					<p class="tit">
-						 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "/local/include/brand/section-3-title.php"
-	)
-);?>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/local/include/brand/section-3-title.php"
+                            )
+                        ); ?>
 					</p>
 					<div class="notice">
 						<ul>
@@ -198,4 +198,5 @@ $APPLICATION->SetTitle("YVOIRE - Brand Story");
 	</div>
 	 <!-- //contents -->
 </div>
-    <!-- //container --><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+    <!-- //container -->
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

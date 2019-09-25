@@ -42,10 +42,10 @@ $APPLICATION->SetTitle("YVOIRE");
                         )
                     ); ?>
                     <span class="page_navi left"><a href="/whyyvoire/"><img
-                                    src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
+                                    src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="ЛЕВАЯ СТРАНИЦА"/></a></span>
                     <span class="page_navi right"><a href="/review/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_right.png"
-                                    alt="RIGHT PAGE"/></a></span>
+                                    alt="ПРАВАЯ СТРАНИЦА"/></a></span>
                 </div>
             </div>
         </div>
@@ -57,11 +57,11 @@ $APPLICATION->SetTitle("YVOIRE");
                 <div class="inner">
                     <div>
                         <ul>
-                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="home"/>
+                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="На главную"/>
                             </li>
                             <li><p>YVOIRE</p></li>
                             <li class="step"><p>></p></li>
-                            <li><p>YVOIRE PRODUCTS</p></li>
+                            <li><p>ПРЕПАРАТЫ YVOIRE</p></li>
                         </ul>
                     </div>
                 </div>
@@ -120,13 +120,13 @@ $APPLICATION->SetTitle("YVOIRE");
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Practical uses</p></td>
-                                    <td colspan="2"><p>Fine wrinkle correction & Volumizing</p></td>
+                                    <td class="tit"><p>Практическое применение</p></td>
+                                    <td colspan="2"><p>Коррекция и наполнение мелких морщин</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Relative HA particle size</p></td>
+                                    <td class="tit"><p>Относительный размер частиц гиалуроновай кислоты</p></td>
                                     <td colspan="2">
-                                        <p>Cross-linked HA
+                                        <p>Гиалуроновая кислота с перекрестными связями
                                             <span class="small"></span>
                                             <span class="medium"></span>
                                             <span class="large"></span>
@@ -134,17 +134,17 @@ $APPLICATION->SetTitle("YVOIRE");
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Lidocaine</p></td>
-                                    <td colspan="2"><p class="tRight">0.3% lidocaine</p></td>
+                                    <td class="tit"><p>Лидокаин</p></td>
+                                    <td colspan="2"><p class="tRight">Лидокаин 0,3%</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Enclosed needles</p></td>
+                                    <td class="tit"><p>Закрытые иглы</p></td>
                                     <td colspan="2"><p>30 G, 27 G</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Volume per syringe</p></td>
-                                    <td><p>1ml</p></td>
-                                    <td><p>1ml</p></td>
+                                    <td class="tit"><p>Объем на шприц</p></td>
+                                    <td><p>1 мл</p></td>
+                                    <td><p>1 мл</p></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -161,14 +161,14 @@ $APPLICATION->SetTitle("YVOIRE");
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Practical uses</p></td>
-                                    <td colspan="2"><p>Deep wrinkle correction & Volumizing</p></td>
+                                    <td class="tit"><p>Практическое применение</p></td>
+                                    <td colspan="2"><p>Коррекция и наполнение глубоких морщин</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Relative HA particle size</p></td>
+                                    <td class="tit"><p>Относительный размер частиц гиалуроновой кислоты</p></td>
                                     <td colspan="2">
                                         <p>
-                                            Cross-linked HA
+                                            Гиалуроновая кислота с перекрестными связями
                                             <span class="small"></span>
                                             <span class="medium"></span>
                                             <span class="large"></span>
@@ -176,15 +176,15 @@ $APPLICATION->SetTitle("YVOIRE");
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Lidocaine</p></td>
-                                    <td colspan="2"><p class="tRight">0.3% lidocaine</p></td>
+                                    <td class="tit"><p>Лидокаин</p></td>
+                                    <td colspan="2"><p class="tRight">Лидокаин 0.3%</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Enclosed needles</p></td>
+                                    <td class="tit"><p>Закрытые иглы</p></td>
                                     <td colspan="2"><p>27 G</p></td>
                                 </tr>
                                 <tr>
-                                    <td class="tit"><p>Volume per syringe</p></td>
+                                    <td class="tit"><p>Объем на шприц</p></td>
                                     <td><p>1ml</p></td>
                                     <td><p>1ml</p></td>
                                 </tr>

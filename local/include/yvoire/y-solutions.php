@@ -1,1 +1,1 @@
-Y-Solution<span class="suffix">TM</span> Products
+Препараты Y-Solution<span class="suffix">TM</span>

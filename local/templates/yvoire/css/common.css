@@ -116,6 +116,12 @@
     font-weight: 600;
     src: url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/malgun.woff') format('woff');
+}
 
 /*=============================================
 =                   ##RESET                   =
@@ -280,7 +286,7 @@ span.arrow.right {right:0;}
 .footer .aside .asideTop ul li a {font-size:.8rem;}
 .footer .aside .asideTop ul li.sProduct a {display:block; background:#f4f4f4 url(../images/icon/arrow_top.png) 80% 50% no-repeat; width:13rem; height:3rem; padding-left:15%; line-height:3rem; font-weight:500; color:#f16681; border-left:2px solid #ececec; text-align:left;}
 .footer .aside .asideTop ul li.sProduct.active a {background:#fff url(../images/icon/arrow_bot.png) 80% 50% no-repeat !important; border-left:2px solid #fff;}
-.footer .aside .asideTop ul li.moveTop a {display:block; background:#7a818b; width:3rem; height:3rem; line-height:3rem; font-weight:500; color:#fff; text-align:center;}
+.footer .aside .asideTop ul li.moveTop a {display:block; background:#7a818b; width:3.5rem; height:3rem; line-height:3rem; font-weight:500; color:#fff; text-align:center;}
 
 .footer .aside .asideBot {height:12rem;}
 .footer .aside .asideBot:after {content:""; display:block; clear:both;}
@@ -296,7 +302,7 @@ span.arrow.right {right:0;}
 
 .footer .aside .asideBot .copyright {float:left; margin-top:2rem;}
 .footer .aside .asideBot .copyright>div p {margin-top:2rem; font-weight:500; font-size:.9rem; color:#7a7f89;}
-.footer .aside .asideBot .copyright>div p>a {position:relative; margin-left:1rem; color:#7a7f89;}
+.footer .aside .asideBot .copyright>div p>a {position:relative; display: inline-block; margin-left:1rem; color:#7a7f89;}
 .footer .aside .asideBot .copyright>div p>a:before {content:""; display:block; position:absolute; top:0; left:-.5rem; background:#c9cacd; width:1px; height:.9rem;}
 .footer .aside .asideBot .copyright>div ul:after {content:""; display:block; clear:both;}
 .footer .aside .asideBot .copyright>div ul li {float:left; position:relative; overflow:visible;}

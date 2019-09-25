@@ -1,1 +1,1 @@
-HICE<span class="suffix">TM</span> Cross-linking Technology
+HICE<span class="suffix">TM</span> Технология поперечного сшивания

@@ -1,2 +1,1 @@
-<span>SINCE 2010, </span>THE BEAUTY OF 'YVOIRE' DELIVERED TO THE WORLD BEYOND
-ASIA
+<span>С 2010, </span>ПРОДУКЦИЯ БРЕНДА ПОЛУЧИЛА РАСПРОСТРАНЕНИЕ ЗА ПРЕДЕЛАМИ КОРЕИ И КИТАЯ

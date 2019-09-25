@@ -1,1 +1,1 @@
-Distinguished HA raw materials
+Безупречное сырье гиалуроновой кислоты

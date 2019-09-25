@@ -1,1 +1,1 @@
-Cross-linking ratio of HA filler products
+Отношение перекрестного сшивания филлеров гиалуроновой кислоты

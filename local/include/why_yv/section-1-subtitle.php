@@ -1,1 +1,1 @@
-Authorized quality
+Гарантированное качество

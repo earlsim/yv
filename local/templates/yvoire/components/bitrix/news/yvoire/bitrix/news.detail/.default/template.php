@@ -107,7 +107,7 @@ $pictureArr = ($arResult['DISPLAY_PROPERTIES']["CONTENT_PICTURE"]["DISPLAY_VALUE
                                                 <?$src = explode('"', $value);?>
                                                 <?$src = $src[1];?>
                                                 <?$url = $protocol . $currHost . $src;?>
-                                            <div style="width:800px">
+                                            <div class="content-img">
                                                 <img src="<?echo $url;?>" alt="">
                                             </div>
                                             <?endforeach?>
@@ -115,7 +115,7 @@ $pictureArr = ($arResult['DISPLAY_PROPERTIES']["CONTENT_PICTURE"]["DISPLAY_VALUE
                                             <?$src = explode('"', $pictureArr)?>
                                             <?$src = $src[1];?>
                                             <?$url = $protocol . $currHost . $src;?>
-                                            <div style="width:800px">
+                                            <div class="content-img">
                                                 <img src="<?echo $url;?>" alt="">
                                             </div>
                                         <?endif?>

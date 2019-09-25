@@ -1,4 +1,1 @@
-HICE<span class="suffix">TM</span> Cross-linking Technology, which enables to reach the
-maximum cross-linking ratio despite of "minimal use of cross-linkers" by dispersing the
-cross-linkers into
-highly concentrated HA during cross-linking reaction.
+HICE<span class="suffix">TM</span> технология, позволяющая достичь максимального коэффициента поперечного сшивания. Она предусматривает распределение минимального количества сшивающих агентов по субстанции высококонцентрированной гиалуроновая кислота во время процесса сшивания.

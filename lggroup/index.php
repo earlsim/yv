@@ -25,10 +25,10 @@ $APPLICATION->SetTitle("LG GROUP");
                         )
                     ); ?>
                     <span class="page_navi left"><a href="/faq/"><img
-                                    src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="LEFT PAGE"/></a></span>
+                                    src="/local/templates/yvoire/images/icon/page_navigator_left.png" alt="ЛЕВАЯ СТРАНИЦА"/></a></span>
                     <span class="page_navi right"><a href="/lgchem/"><img
                                     src="/local/templates/yvoire/images/icon/page_navigator_right.png"
-                                    alt="RIGHT PAGE"/></a></span>
+                                    alt="ПРАВАЯ СТРАНИЦА"/></a></span>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ $APPLICATION->SetTitle("LG GROUP");
                 <div class="inner">
                     <div>
                         <ul>
-                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="home"/>
+                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="На главную"/>
                             </li>
                             <li><p>LG</p></li>
                             <li class="step"><p>></p></li>
@@ -78,9 +78,9 @@ $APPLICATION->SetTitle("LG GROUP");
                                     ); ?>
                                 </p>
                             </div>
-                            <img src="/local/templates/yvoire/images/sub/lggroup/group_img01.jpg" alt="LG TWIN TOWERS"
+                            <img src="/local/templates/yvoire/images/sub/lggroup/group_img01.jpg" alt="БАШНИ-БЛИЗНЕЦЫ LG"
                                  class="pc"/>
-                            <img src="/local/templates/yvoire/images/sub/lggroup/group_mimg01.jpg" alt="LG TWIN TOWERS"
+                            <img src="/local/templates/yvoire/images/sub/lggroup/group_mimg01.jpg" alt="БАШНИ-БЛИЗНЕЦЫ LG"
                                  class="mobile"/>
                         </li>
                         <li>
@@ -204,8 +204,7 @@ $APPLICATION->SetTitle("LG GROUP");
                             </p>
                             <div class="btn_type01" style="opacity: 1; margin-top: 4%;">
                                 <span class="hEffect" style="top: 50%; left: 50%; width: 0px; height: 0px;"></span>
-                                <a href="http://www.lgcorp.com/main/main.dev" target="_blank" class="btn-1">view
-                                    more</a>
+                                <a href="http://www.lgcorp.com/main/main.dev" target="_blank" class="btn-1">далее</a>
                             </div>
                         </div>
                         <div class="park address blind">

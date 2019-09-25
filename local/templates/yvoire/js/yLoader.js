@@ -14,6 +14,7 @@ $(function(){
 $(window).load(function(){
     //footer product document ready and hidden process
 //	$(".footer .product").slideUp(0);
+    lineBg.init();
 	setTimeout(function(){
 		$(".footer .product").slideUp(0);
 	},500);
@@ -42,10 +43,10 @@ var mainPage = {
     maxSlideIdx:2,
     storyTime:300,
     sStory:false,
-    slideTit:["<img src='/local/templates/yvoire/images/main/visual_tit00.png' alt='Healing of Beauty YVOIRE' />", "<img src='/local/templates/yvoire/images/main/visual_tit01.png' alt='yvoire is present worldwide' />", "<img src='/local/templates/yvoire/images/main/visual_tit02.png' alt='produces distinguished' />"],
-    mslideTit:["<img src='/local/templates/yvoire/images/main/mvisual_tit00.png' alt='Healing of Beauty YVOIRE' />", "<img src='/local/templates/yvoire/images/main/visual_tit01.png' alt='yvoire is present worldwide' />", "<img src='/local/templates/yvoire/images/main/visual_mtit02.png' alt='produces distinguished' />"],
-    slideSubTit:["", "YVOIRE<span class='suffix'>Ⓡ</span> is being exported worldwide to over 20 countries.", "LG Chem has developed and manufactured hyaluronic acid pharmaceutical products over 25 years."],
-    mslideSubTit:["", "YVOIRE<span class='suffix'>Ⓡ</span> is being exported<p>worldwide to over 20 countries.</p>", "LG Chem has developed and manufactured hyaluronic acid pharmaceutical products over 25 years."],
+    slideTit:["<img src='/local/templates/yvoire/images/main/visual_tit00.png' alt='Healing of Beauty YVOIRE' />", "<img src='/local/templates/yvoire/images/main/visual_tit01.png' alt='Yvoire не знает границ' />", "<img src='/local/templates/yvoire/images/main/visual_tit02.png' alt='produces distinguished' />"],
+    mslideTit:["<img src='/local/templates/yvoire/images/main/mvisual_tit00.png' alt='Healing of Beauty YVOIRE' />", "<img src='/local/templates/yvoire/images/main/visual_tit01.png' alt='Yvoire не знает границ' />", "<img src='/local/templates/yvoire/images/main/visual_mtit02.png' alt='produces distinguished' />"],
+    slideSubTit:["", "YVOIRE<span class='suffix'>Ⓡ</span> экспортируется более чем в 20 стран мира.", "LG Chem разрабатывает и производит препараты на основе гиалуроновой кислоты более 20 лет."],
+    mslideSubTit:["", "YVOIRE<span class='suffix'>Ⓡ</span> экспортируется более чем в 20 стран мира.</p>", "LG Chem разрабатывает и производит препараты на основе гиалуроновой кислоты более 20 лет."],
     moreUrl:["/brand/","/lgchem/","/whyyvoire/"],
     init:function(){
         this.visualBtnEvent();

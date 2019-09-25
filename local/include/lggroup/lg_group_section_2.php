@@ -1,1 +1,1 @@
-LG Head quarter
+Штаб-квартира LG

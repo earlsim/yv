@@ -34,11 +34,11 @@ $APPLICATION->SetTitle("Why YVOIRE");
                 <div class="inner">
                     <div>
                         <ul>
-                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="home"/>
+                            <li class="home"><img src="/local/templates/yvoire/images/icon/location.png" alt="На главную"/>
                             </li>
                             <li><p>YVOIRE</p></li>
                             <li class="step"><p>></p></li>
-                            <li><p>WHY YVOIRE</p></li>
+                            <li><p>Почему YVOIRE</p></li>
                         </ul>
                     </div>
                 </div>
@@ -48,9 +48,9 @@ $APPLICATION->SetTitle("Why YVOIRE");
                 <div class="section">
                     <div class="inner">
                         <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img01.png"
-                             alt="YVOIRE INTRODUCTION" class="pc"/>
+                             alt="История Yvoire" class="pc"/>
                         <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_mimg01.png"
-                             alt="YVOIRE INTRODUCTION" class="mobile"/>
+                             alt="История Yvoire" class="mobile"/>
                         <div class="movie_intro">
                             <iframe src="https://www.youtube.com/embed/46WIb-cdYaM?rel=0&autoplay=1" frameborder="0"
                                     scrolling="no" allowfullscreen></iframe>
@@ -85,9 +85,9 @@ $APPLICATION->SetTitle("Why YVOIRE");
                             <ul>
                                 <li>
                                     <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img02.jpg"
-                                         alt="YVOIRE MATERIALS" class="pc"/>
+                                         alt="МАТЕРИАЛЫ Yvoire" class="pc"/>
                                     <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_mimg02.png"
-                                         alt="YVOIRE MATERIALS" class="mobile"/>
+                                         alt="МАТЕРИАЛЫ Yvoire" class="mobile"/>
                                 </li>
                                 <li>
                                     <p class="subtit">
@@ -142,9 +142,9 @@ $APPLICATION->SetTitle("Why YVOIRE");
                             </p>
                             <div style="margin-top:1rem;">
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img03.png"
-                                     alt="HICE Cross-linking Technology" class="pc"/>
+                                     alt="HICE Технология поперечного сшивания" class="pc"/>
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_mimg03.png"
-                                     alt="HICE Cross-linking Technology" class="mobile"/>
+                                     alt="HICE Технология поперечного сшивания" class="mobile"/>
                             </div>
                         </div>
                         <!-- <div>
@@ -168,9 +168,9 @@ $APPLICATION->SetTitle("Why YVOIRE");
                             </p>
                             <div style="margin-top:1rem;">
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_img05.png"
-                                     alt="HICE Cross-linking Technology" class="pc"/>
+                                     alt="HICE Технология поперечного сшивания" class="pc"/>
                                 <img src="/local/templates/yvoire/images/sub/haofyvoire/yvoire_mimg05.png"
-                                     alt="HICE Cross-linking Technology" class="mobile"/>
+                                     alt="HICE Технология поперечного сшивания" class="mobile"/>
                             </div>
                         </div>
                         <div>

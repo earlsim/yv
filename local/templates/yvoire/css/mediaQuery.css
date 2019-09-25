@@ -57,7 +57,7 @@
     .footer .aside .asideTop {height:4.1rem;}
     .footer .aside .asideTop ul li.sProduct a {width:13.25rem; height:4rem; padding-left:8%; background-position-x:91%; line-height:4rem; font-size:1.1rem; letter-spacing:-1px;}
     .footer .aside .asideTop ul li.sProduct.active a {background-position-x:91% !important;}
-    .footer .aside .asideTop ul li.moveTop a {width:4rem; height:4rem; line-height:4rem; font-size:1.2rem;}
+    .footer .aside .asideTop ul li.moveTop a {width:5rem; height:4rem; line-height:4rem; font-size:1.2rem;}
     
     .footer .aside .asideBot .copyright {margin-top:3rem;}
     .footer .aside .asideBot .copyright>div p {margin-top:2.7rem;}
@@ -118,7 +118,7 @@
     /* SUB PAGE :: LG GROUP */
     .ctx_lggroup .sub_visual {background:url(../images/sub/lggroup/lggroup_mvisual.jpg) 50% 0% no-repeat;}
     .ctx_lggroup .lggroup_view {margin-top:6.5rem;}
-    .ctx_lggroup .lggroup_view p.tit {font-size:3.5rem;}
+    .ctx_lggroup .lggroup_view p.tit {font-size:3.2rem;}
     .ctx_lggroup .lggroup_view p.subtit {font-size:1.6rem;}
     .ctx_lggroup .lggroup_view .tit_box.pc {display:none;}
     .ctx_lggroup .lggroup_view .tit_box.mobile {display:block !important; padding-left:2rem;}
@@ -301,7 +301,7 @@
 @media all and (max-width: 375px) {
     html,bdy {font-size:14px;}
     .header .gnb {padding:.78rem 0;}
-    .footer .aside .asideBot .selectbox label {top:5px;}
+    /*.footer .aside .asideBot .selectbox label {top:5px;}*/
     .footer .aside .asideBot .selectbox:before {right:10px;}
 }
 

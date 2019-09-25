@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "YVOIRE - LG Chem");
+$APPLICATION->SetPageProperty("keywords", "YVOIRE - LG Chem");
+$APPLICATION->SetPageProperty("description", "YVOIRE - LG Chem");
 $APPLICATION->SetTitle("LG Chem");
 ?>
 
@@ -116,17 +119,7 @@ $APPLICATION->SetTitle("LG Chem");
                     </div>
                 </div>
                 <div class="lgchem_business">
-                    <p class="tit">
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "EDIT_TEMPLATE" => "",
-                                "PATH" => "/local/include/lgchem/section-2-title.php"
-                            )
-                        ); ?>
-                    </p>
+                    <p class="tit">Life Sciences company’s<br/>Main Business</p>
                     <div class="inner">
                         <img src="/local/templates/yvoire/images/sub/lgchem/business_img01.png"
                              alt="LG Chem-Life Science’s Main Business" class="pc"/>

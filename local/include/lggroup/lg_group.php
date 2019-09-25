@@ -1,2 +1,2 @@
 <h2>LG Group</h2>
-<h3>Creating value for customers<p>will continue to evolve as a trusted company</p></h3>
+<h3>Создание ценностей для клиентов —<p> неизменная политика компании по завоеванию лояльности клиентов</p></h3>

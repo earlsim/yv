@@ -296,7 +296,7 @@ span.arrow.right {right:0;}
 
 .footer .aside .asideBot .copyright {float:left; margin-top:2rem;}
 .footer .aside .asideBot .copyright>div p {margin-top:2rem; font-weight:500; font-size:.9rem; color:#7a7f89;}
-.footer .aside .asideBot .copyright>div p>a {position:relative; margin-left:1rem; color:#7a7f89;}
+.footer .aside .asideBot .copyright>div p>a {position:relative; margin-left:1rem; color:#7a7f89; display: inline-block;}
 .footer .aside .asideBot .copyright>div p>a:before {content:""; display:block; position:absolute; top:0; left:-.5rem; background:#c9cacd; width:1px; height:.9rem;}
 .footer .aside .asideBot .copyright>div ul:after {content:""; display:block; clear:both;}
 .footer .aside .asideBot .copyright>div ul li {float:left; position:relative; overflow:visible;}

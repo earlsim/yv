@@ -1,2 +1,2 @@
-<h2>Why YVOIRE</h2>
-<h3>From HA raw material to end product<p>by LG Chem</p></h3>
+<h2>Почему YVOIRE</h2>
+<h3>От исходного сырья до конечного продукта<p>LG Chem</p></h3>

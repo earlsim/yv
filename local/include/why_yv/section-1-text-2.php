@@ -1,9 +1,5 @@
-<p>Reliable HA material listed to US<i class="fda"><img src="/local/templates/yvoire/images/sub/haofyvoire/fda.jpg" alt="FDA"/></i>DMF <b>1)</b></p>
-<p class="edom">and certificated by<i class="edom"><img src="/local/templates/yvoire/images/sub/haofyvoire/edom.jpg" alt="FDA"/></i>DMF <b>2)</b></p>
+<p>Надежные материалы ГК, представленные в<i class="fda"><img src="/local/templates/yvoire/images/sub/haofyvoire/fda.jpg" alt="FDA"/></i>DMF <b>1)</b></p>
+<p class="edom">И сертифицированные<i class="edom"><img src="/local/templates/yvoire/images/sub/haofyvoire/edom.jpg" alt="FDA"/></i>DMF <b>2)</b></p>
 <p>
-    LG Chems' non-animal origin HA has been marketed in various medical
-    fields since 1995 with proven safety and efficacy.
-    Its high molecular weight HA has been approved by
-    the European Directorate for the Quality of Medicinesand its drug master
-    file has been filed to the US FDA.
+    Гиалуроновая неживотного происхождения, выпускаемая LG Chem, применяется в различных областях медицины с 1995 года, доказав свою безопасность и эффективность. Субстанция гиалуроновой кислоты LG Chem одобрена Управлением по санитарному надзору за качеством пищевых продуктов и медикаментов США (FDA), а также Европейским директоратом по контролю за качеством лекарственных препаратов (EDQM).
 </p>

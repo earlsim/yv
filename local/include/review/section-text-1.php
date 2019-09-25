@@ -1,4 +1,1 @@
-Do you wonder why doctors all over the world choose Yvoire?
-Dr. Salvatore Fundaro and Dr. Francesco Romeo, plastic surgeons
-in Italy, and the cosmetologist Dr. Oksana Pavlenko from Russia,
-have all used Yvoire for many years, and now they will tell you why.
+Почему врачи всего мира выбирают Yvoire? Доктора Сальваторе Фундаро и Франческо Ромео (пластические хирурги из Италии), доктор Оксана Павленко (врач-косметолог, Россия) — все они используют Yvoire уже много лет, и сейчас объяснят, почему.

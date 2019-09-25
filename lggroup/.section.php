@@ -1,6 +1,6 @@
 <?
-$sSectionName = "LG GROUP11";
-$arDirProperties = Array(
+$sSectionName = "LG GROUP";
+$arDirProperties = array(
 
 );
 ?>

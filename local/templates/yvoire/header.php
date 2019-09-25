@@ -14,7 +14,8 @@
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/common.css");?>
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/sub.css");?>
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/mediaQuery.css")?>
-		
+		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/seminar.css")?>
+
         <!-- js file load -->
         
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/jquery-1.11.3.min.js");?>
@@ -27,6 +28,7 @@
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/social.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/common.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/yLoader.js");?>
+        <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bundle.js");?>
 
         <?Asset::getInstance()->addJs("http://maps.googleapis.com/maps/api/js");?>
         <?Asset::getInstance()->addJs("http://connect.facebook.net/ko_KR/all.js");?>
@@ -45,7 +47,7 @@
                     <div class="home">
                         <h1>
                             <a href="/index.php">
-                                <img src="/local/templates/yvoire/images/logo/logo.gif" alt="YVOIRE LOGO"/>
+                                <img src="/local/templates/yvoire/images/logo/logo.gif" alt="ЛОГОТИП Yvoire"/>
                             </a>
                         </h1>
                     </div>
@@ -82,15 +84,15 @@
                                     </li>
                                     <li>
                                         <ul>
-                                            <li><a href="/brand/">Brand Story</a></li>
-                                            <li><a href="/whyyvoire/">Why YVOIRE</a></li>
-                                            <li><a href="/yvoire/">Product Information</a></li>
+                                            <li><a href="/brand/">История бренда</a></li>
+                                            <li><a href="/whyyvoire/">Почему YVOIRE</a></li>
+                                            <li><a href="/yvoire/">О препарате</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <ul>
-                                            <li><a href="/review/">Procedure Review</a></li>
-                                            <li><a href="/review/">Before & After</a></li>
+                                            <li><a href="/review/">Обзор процедуры</a></li>
+                                            <li><a href="/review/">До и после</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -126,23 +128,23 @@
                                         <a href="javascript:;">YVOIRE<span class="more">+</span></a>
                                         <div class="m_list02">
                                             <ul>
-                                                <li><a href="/brand/">Brand Story</a></li>
-                                                <li><a href="/whyyvoire/">Why YVOIRE</a></li>
-                                                <li><a href="/yvoire/">Product Information</a></li>
+                                                <li><a href="/brand/">История бренда</a></li>
+                                                <li><a href="/whyyvoire/">Почему YVOIRE</a></li>
+                                                <li><a href="/yvoire/">О препарате</a></li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="javascript:;">REVIEW<span class="more">+</span></a>
+                                        <a href="javascript:;">ОБЗОР<span class="more">+</span></a>
                                         <div class="m_list02">
                                             <ul>
-                                                <li><a href="/review/">Procedure Review</a></li>
-                                                <li><a href="/review/">Before & After</a></li>
+                                                <li><a href="/review/">Обзор процедуры</a></li>
+                                                <li><a href="/review/">До и после</a></li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="javascript:;">NEWS<span class="more">+</span></a>
+                                        <a href="javascript:;">НОВОСТИ<span class="more">+</span></a>
                                         <div class="m_list02">
                                             <ul>
                                                 <li><a href="/sns/">SNS</a></li>

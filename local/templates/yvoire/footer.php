@@ -29,8 +29,8 @@
 			<div class="inner aRight">
 			    <div>
 				<ul>
-				    <li class="sProduct"><a href="javascript:;">Products in one view</a></li>
-				    <li class="moveTop"><a href="javascript:;">top</a></li>
+				    <li class="sProduct"><a href="javascript:;">Линия препаратов</a></li>
+				    <li class="moveTop"><a href="javascript:;">Наверх</a></li>
 				</ul>
 			    </div>
 			</div>
@@ -56,9 +56,9 @@
 				</div>
 				<div>
 				    <div class="selectbox">
-					<label for="site_select">Family site</label>
+					<label for="site_select">Сайт</label>
 					<select id="site_select">
-					    <option value="Family site" selected>Family site</option>
+					    <option value="Family site" selected>Yvoire</option>
 					    <option valye="LG">LG</option>
 					    <option valye="LG Chem">LG Chem</option>
 					</select>
@@ -78,7 +78,7 @@
 					</li>
 				    </ul>
 				</div>
-				<div><p>Copyright © LG Chem. All Rights Reserved.<a href="mailto:yvoire@lgchem.com">yvoire@lgchem.com</a></p></div>
+				<div><p>Авторское право © LG Chem. Все права защищены.<a href="mailto:yvoire@lgchem.com">yvoire@lgchem.com</a></p></div>
 			    </div>
 			</div>
 		    </div>
