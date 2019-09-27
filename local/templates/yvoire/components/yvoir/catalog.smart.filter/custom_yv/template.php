@@ -12,10 +12,10 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 
-$templateData = array(
+//$templateData = array(
 //	'TEMPLATE_THEME' => $this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].'/colors.css',
 //	'TEMPLATE_CLASS' => 'bx_'.$arParams['TEMPLATE_THEME']
-);
+//);
 ?>
 <div class="mobile-close js-close">
     <span></span>
@@ -23,7 +23,7 @@ $templateData = array(
 </div>
 
 <div class="bx_filter">
-	<div class="bx_filter_section vcustom">
+	<div class="bx_filter_section">
 <!--		<div class="bx_filter_title">--><?//echo GetMessage("CT_BCSF_FILTER_TITLE")?><!--</div>-->
 		<form name="<?echo $arResult["FILTER_NAME"]."_form"?>" action="<?echo $arResult["FORM_ACTION"]?>" method="get" class="smartfilter">
 			<?foreach($arResult["HIDDEN"] as $arItem):?>
@@ -133,7 +133,6 @@ $templateData = array(
 			//not prices
 			foreach($arResult["ITEMS"] as $key=>$arItem)
 			{
-//			    var_dump($arItem);
 				if(
 					empty($arItem["VALUES"])
 					|| isset($arItem["PRICE"])
@@ -468,9 +467,8 @@ $templateData = array(
 								break;
 							case "K"://RADIO_BUTTONS
 								?>
-
                                 <select class="nav-city__select" id="<?=$arItem['CODE']; ?>" name="" onChange="smartFilter.click(this)"  >
-                                    <option id="not-value" value="" >- - - -</option>
+                                    <option id="not-value" value="" >Выберите город</option>
                                     <?foreach($arItem["VALUES"] as $val => $ar) { ?>
                                         <option <?echo $ar["CHECKED"]? 'selected="selected"': ''?>  id="<?echo $ar["CONTROL_NAME"]?>"  <?if ($ar["DISABLED"]){ ?>disabled<? } ?> value="Y" >
                                             <?echo $ar["VALUE"];?>
@@ -500,10 +498,10 @@ $templateData = array(
 								break;
 							case "U"://CALENDAR
 								?>
-								<div class="bx_filter_parameters_box_container_block"><div class="bx_filter_input_container bx_filter_calendar_container">
+								<div class="bx_filter_parameters_box_container_block" style="width: 100%"><div class="nav-date">
 									<?$APPLICATION->IncludeComponent(
 										'bitrix:main.calendar',
-										'',
+										'yvoire_calendar',
 										array(
 											'FORM_NAME' => $arResult["FILTER_NAME"]."_form",
 											'SHOW_INPUT' => 'Y',
@@ -517,7 +515,7 @@ $templateData = array(
 										array('HIDE_ICONS' => 'Y')
 									);?>
 								</div></div>
-								<div class="bx_filter_parameters_box_container_block"><div class="bx_filter_input_container bx_filter_calendar_container">
+								<div class="bx_filter_parameters_box_container_block" style="display: none"><div class="bx_filter_input_container bx_filter_calendar_container">
 									<?$APPLICATION->IncludeComponent(
 										'bitrix:main.calendar',
 										'',

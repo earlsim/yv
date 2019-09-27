@@ -4,8 +4,8 @@
 global $APPLICATION;
 CJSCore::Init(array('fx', 'popup'));
 
-if (isset($templateData['TEMPLATE_THEME']))
-{
-	$APPLICATION->SetAdditionalCSS($templateData['TEMPLATE_THEME']);
-}
-?>
+//if (isset($templateData['TEMPLATE_THEME']))
+//{
+//	$APPLICATION->SetAdditionalCSS($templateData['TEMPLATE_THEME']);
+//}
+//?>

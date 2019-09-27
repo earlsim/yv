@@ -12,26 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
-<?if($arParams["USE_RSS"]=="Y"):?>
-	<?
-	if(method_exists($APPLICATION, 'addheadstring'))
-		$APPLICATION->AddHeadString('<link rel="alternate" type="application/rss+xml" title="'.$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["rss"].'" href="'.$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["rss"].'" />');
-	?>
-	<a href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["rss"]?>" title="rss" target="_self"><img alt="RSS" src="<?=$templateFolder?>/images/gif-light/feed-icon-16x16.gif" border="0" align="right" /></a>
-<?endif?>
-
-<?if($arParams["USE_SEARCH"]=="Y"):?>
-<?=GetMessage("SEARCH_LABEL")?><?$APPLICATION->IncludeComponent(
-	"bitrix:search.form",
-	"flat",
-	Array(
-		"PAGE" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["search"]
-	),
-	$component
-);?>
-<br />
-<?endif?>
 <?if($arParams["USE_FILTER"]=="Y"):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.filter",
@@ -42,7 +22,7 @@ $this->setFrameMode(true);
 		"FILTER_NAME" => $arParams["FILTER_NAME"],
 		"FIELD_CODE" => $arParams["FILTER_FIELD_CODE"],
 		"PROPERTY_CODE" => $arParams["FILTER_PROPERTY_CODE"],
-		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => $arParams["CACHE_TIME"],
 		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
 		"PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
@@ -101,7 +81,7 @@ $this->setFrameMode(true);
 		"GROUP_PERMISSIONS" => $arParams["GROUP_PERMISSIONS"],
 		"FILTER_NAME" => $arParams["FILTER_NAME"],
 		"HIDE_LINK_WHEN_NO_DETAIL" => $arParams["HIDE_LINK_WHEN_NO_DETAIL"],
-		"CHECK_DATES" => $arParams["CHECK_DATES"],
+		"CHECK_DATES" => 'N',
 	),
 	$component
 );?>

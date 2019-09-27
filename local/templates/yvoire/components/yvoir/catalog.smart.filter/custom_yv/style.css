@@ -1,5 +1,5 @@
 .bx_filter .bx_filter_section{
-	/*position:relative;*/
+	position:relative;
 	/*padding:30px 3.5% 0;*/
 	/*border:7px solid #e1f5fb;*/
 	/*border-radius:2px;*/
@@ -7,8 +7,8 @@
 	/*text-shadow:0 1px 0 #fff;*/
 }
 .bx_filter .bx_filter_title{
-	font-size:21px;
-	font-weight:bold;
+	/*font-size:21px;*/
+	/*font-weight:bold;*/
 	margin-bottom:10px;
 	padding:0 10px;
 	color:#000;
@@ -18,7 +18,7 @@
 /*bx_filter_container => bx_filter_parameters_box*/
 .bx_filter .bx_filter_button_box,
 .bx_filter .bx_filter_parameters_box{
-	/*margin-bottom:20px;*/
+	margin-bottom:20px;
 	/*padding:0 6px;*/
 }
 .bx_filter .bx_filter_button_box{clear: both;}

@@ -26,9 +26,11 @@
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/jquery.vEllipsis.min.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/instafeed.min.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/social.js");?>
+        <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/datepicker-ru.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/common.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/yLoader.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bundle.js");?>
+
 
         <?Asset::getInstance()->addJs("http://maps.googleapis.com/maps/api/js");?>
         <?Asset::getInstance()->addJs("http://connect.facebook.net/ko_KR/all.js");?>

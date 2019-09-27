@@ -116,11 +116,15 @@ $this->addExternalCss($this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].
 		<?endif;?>
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
             <div class="item-top">
-                <div class="item-date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
-                <a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><div class="item-title"><?echo $arItem["NAME"]?></div></a>
-
+                <div class="item-date"><?echo(FormatDate("d F Y", MakeTimeStamp($arItem["DISPLAY_PROPERTIES"]["DATE"]["VALUE"])));?></div>
+                <a href="<?echo $arItem["DETAIL_PAGE_URL"]?>" target=""><div class="item-title"><?echo $arItem["NAME"]?></div></a>
+                <div class="item-loc"><?echo($arItem["DISPLAY_PROPERTIES"]["CITY"]["VALUE"])?></div>
             </div>
 		<?endif;?>
+        <div class="item-bottom">
+            <?echo($arItem["PROPERTIES"]["TIME"]["NAME"]);?>&#32;<?echo($arItem["PROPERTIES"]["TIME"]["VALUE"])?>
+        </div>
+
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
 			<div class="bx-newslist-content">
 			<?echo $arItem["PREVIEW_TEXT"];?>
@@ -169,25 +173,6 @@ $this->addExternalCss($this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].
 <!--				</div>-->
 <!--			--><?//endif;?>
 		<?endforeach;?>
-		<?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-			<?
-			if(is_array($arProperty["DISPLAY_VALUE"]))
-				$value = implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);
-			else
-				$value = $arProperty["DISPLAY_VALUE"];
-			?>
-			<?if($arProperty["CODE"] == "FORUM_MESSAGE_CNT"):?>
-				<div class="bx-newslist-comments"><i class="fa fa-comments"></i> <?=$arProperty["NAME"]?>:
-					<?=$value;?>
-				</div>
-			<?elseif ($value != ""):?>
-                <div class="item-loc">
-<!--				<div class="bx-newslist-other"><i class="fa"></i> --><?//=$arProperty["NAME"]?><!--:-->
-					<?=$value;?>
-				</div>
-			<?endif;?>
-		<?endforeach;?>
-
 <!--		<div class="item-date">-->
 <!--		--><?//if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 <!--            --><?//echo $arItem["DISPLAY_ACTIVE_FROM"]?>

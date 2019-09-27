@@ -6,6 +6,7 @@
 /** @global CDatabase $DB */
 /** @var CBitrixComponentTemplate $this */
 
+
 /*TAGS*/
 if ($arParams["SEARCH_PAGE"])
 {
@@ -210,3 +211,4 @@ $arResult["NAV_STRING"] = $arResult["NAV_RESULT"]->GetPageNavStringEx(
 	$this->__component,
 	$arResult["NAV_PARAM"]
 );
+
