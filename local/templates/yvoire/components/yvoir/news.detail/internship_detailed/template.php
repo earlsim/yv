@@ -17,7 +17,7 @@ $this->setFrameMode(true);
         <div class="visual_content">
             <div class="inner">
                 <h2 class="seminar-title">Курсы косметологии</h2>
-                <h3 class="sub-title">Lorem ipsum</h3>
+                <h3 class="sub-title"></h3>
                 <span class="page_navi left"><a href="/lgchem/" title="lgchem page"><img alt="ЛЕВАЯ СТРАНИЦА"
                                                                                          src="/local/templates/yvoire/images/icon/page_navigator_left.png"></a></span>
                 <span class="page_navi right"><a href="/whyyvoire/" title="why yvoire"><img alt="ПРАВАЯ СТРАНИЦА"
@@ -66,7 +66,8 @@ $this->setFrameMode(true);
                             <div class="event-loc__value"><?echo($arResult["DISPLAY_PROPERTIES"]["CITY"]["VALUE"])?></div>
                         </div>
                     </div>
-                    <div class="event-inner__right">
+                    <?if($arResult["DISPLAY_PROPERTIES"]["BUTTON"]["VALUE"] !== 0):?>
+                        <div class="event-inner__right">
                         <div class="event-info__register">
                             <div class="btn_type01">
                                 <span class="hEffect"></span>
@@ -74,43 +75,46 @@ $this->setFrameMode(true);
                             </div>
                         </div>
                     </div>
+                    <?endif;?>
                 </div>
                 <div class="event__description">
                     <div class="block-title"><?echo($arResult["DISPLAY_PROPERTIES"]["DESCRIPTION"]["NAME"])?></div>
                     <div class="event-description__text">
                         <?echo(htmlspecialchars_decode($arResult["DISPLAY_PROPERTIES"]["DESCRIPTION"]["VALUE"]["TEXT"]))?>
                     </div>
-                    <div class="block-title al-left"><?echo($arResult["DISPLAY_PROPERTIES"]["DOCTOR_NAME"]["NAME"])?></div>
-                    <section class="specialist-section specialist-section--pb64">
-                        <?if($arResult["DOCTOR_PIC"]):?>
-                            <div class="section-image section-image--pa section-image--left-sqr">
-                                <div class="pic-wrap">
-                                    <img src="<?echo($arResult['DOCTOR_PIC']);?>" alt="<?echo($arResult["DOCTOR_INFO"]["PROPERTY_DOCTOR_INFO_VALUE"]["NAME"])?>">
+                    <?if($arResult["DISPLAY_PROPERTIES"]["DOCTOR_NAME"]):?>
+                        <div class="block-title al-left"><?echo($arResult["DISPLAY_PROPERTIES"]["DOCTOR_NAME"]["NAME"])?></div>
+                        <section class="specialist-section specialist-section--pb64">
+                            <?if($arResult["DOCTOR_PIC"]):?>
+                                <div class="section-image section-image--pa section-image--left-sqr">
+                                    <div class="pic-wrap">
+                                        <img src="<?echo($arResult['DOCTOR_PIC']);?>" alt="<?echo($arResult["DOCTOR_INFO"]["PROPERTY_DOCTOR_INFO_VALUE"]["NAME"])?>">
+                                    </div>
+                                </div>
+                            <?endif;?>
+                            <div class="section-text">
+                                <div class="section-text__title"><?echo($arResult["DOCTOR_INFO"]["NAME"])?></div>
+                                <div class="section-text__text">
+                                    <p class="text"><?echo($arResult['DOCTOR_INFO']["PROPERTY_DOCTOR_INFO_VALUE"]['TEXT']);?></p>
                                 </div>
                             </div>
-                        <?endif;?>
-                        <div class="section-text">
-                            <div class="section-text__title"><?echo($arResult["DOCTOR_INFO"]["NAME"])?></div>
-                            <div class="section-text__text">
-                                <p class="text"><?echo($arResult['DOCTOR_INFO']["PROPERTY_DOCTOR_INFO_VALUE"]['TEXT']);?></p>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    <?endif;?>
                     <section class="event__location">
-                        <div class="block-title al-center">Место проведения</div>
-                        <?if($arResult["LOC_INFO"]["PREVIEW_SRC"]):?>
+<!--                        <div class="block-title al-center">Место проведения</div>-->
+                        <?if($arResult["PREVIEW_PICTURE"]):?>
                             <div class="event-location__pic">
-                                <img src="<?echo($arResult["LOC_INFO"]["PREVIEW_SRC"])?>" alt="<?echo($arResult["LOC_INFO"]["NAME"])?>">
+                                <img src="<?echo($arResult["PREVIEW_PICTURE"]["SRC"])?>" alt="<?echo($arResult["PREVIEW_PICTURE"]["ALT"])?>">
                             </div>
                         <?endif;?>
-                        <div class="event-location__title">
-                            <h3 class="sub-title sub-title--mb64"><?echo($arResult["LOC_INFO"]["NAME"])?></h3>
-                            <div class="btn_type02">
-                                <span class="hEffect"></span>
-                                <a href="<?echo($arResult['LOC_INFO']['LOC_LINK'])?>" class="btn-1">Подробнее</a>
+<!--                        <div class="event-location__title">-->
+<!--                            <h3 class="sub-title sub-title--mb64">--><?//echo($arResult["NAME"])?><!--</h3>-->
+<!--                            <div class="btn_type02">-->
+<!--                                <span class="hEffect"></span>-->
+<!--                                <a href="--><?//echo($arResult['LOC_INFO']['LOC_LINK'])?><!--" class="btn-1">Подробнее</a>-->
 
-                            </div>
-                        </div>
+<!--                            </div>-->
+<!--                        </div>-->
                     </section>
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:news.list",

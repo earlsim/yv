@@ -18,7 +18,7 @@ $this->setFrameMode(true);?>
             ?>
             <div class="grid-list__item">
                 <div class="grid-item__title">
-                    <?echo($arItem["PROPERTY_LOCATION_VALUE"]);?> | <?echo($arItem["PROPERTY_TIME_VALUE"]);?>
+                    <?echo($arItem["PROPERTIES"]["LOCATION"]["VALUE"]);?> | <?echo($arItem["PROPERTIES"]["TIME"]["VALUE"]);?>
                 </div>
                 <div class="grid-item__link text">
                     <a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?echo($arItem["NAME"]);?></a>

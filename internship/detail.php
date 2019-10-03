@@ -1,10 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
-?>
-<?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
     "yvoir:news.detail",
-    "seminar_detailed",
+    "internship_detailed",
     Array(
         "ACTIVE_DATE_FORMAT" => "d.m.Y",
         "ADD_ELEMENT_CHAIN" => "N",
@@ -19,7 +18,7 @@ $APPLICATION->SetTitle("");
         "CACHE_TIME" => "36000000",
         "CACHE_TYPE" => "N",
         "CHECK_DATES" => "N",
-        "DETAIL_URL" => "",
+        "DETAIL_URL" => "detail.php#ID#",
         "DISPLAY_BOTTOM_PAGER" => "N",
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
@@ -29,8 +28,8 @@ $APPLICATION->SetTitle("");
         "ELEMENT_CODE" => $_REQUEST["CODE"],
         "ELEMENT_ID" => $_REQUEST["ID"],
         "FIELD_CODE" => array("PREVIEW_PICTURE","NAME"),
-        "IBLOCK_ID" => "4",
-        "IBLOCK_TYPE" => "EVENTS",
+        "IBLOCK_ID" => "7",
+        "IBLOCK_TYPE" => "internship",
         "IBLOCK_URL" => "",
         "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
         "MESSAGE_404" => "",

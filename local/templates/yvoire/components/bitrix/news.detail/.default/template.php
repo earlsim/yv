@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
     <?if($arResult["NAME"]):?>
-        <div class="section-text__title section-text__title--m64"><?echo($arResult['NAME'])?></div>
+        <div class="section-text__title section-text__title--m64 js-event-title"><?echo($arResult['NAME'])?></div>
     <?endif;?>
         <div class="event">
             <div class="event__info">

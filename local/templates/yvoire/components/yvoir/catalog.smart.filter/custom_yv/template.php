@@ -522,7 +522,7 @@ $this->setFrameMode(true);
 										array(
 											'FORM_NAME' => $arResult["FILTER_NAME"]."_form",
 											'SHOW_INPUT' => 'Y',
-											'INPUT_ADDITIONAL_ATTR' => 'class="calendar" placeholder="'.FormatDate("SHORT", $arItem["VALUES"]["MAX"]["VALUE"]).'" onkeyup="smartFilter.keyup(this)" onchange="smartFilter.keyup(this)"',
+											'INPUT_ADDITIONAL_ATTR' => 'class="calendar" placeholder="Выберите дату" onkeyup="smartFilter.keyup(this)" onchange="smartFilter.keyup(this)"',
 											'INPUT_NAME' => $arItem["VALUES"]["MAX"]["CONTROL_NAME"],
 											'INPUT_VALUE' => $arItem["VALUES"]["MAX"]["HTML_VALUE"],
 											'SHOW_TIME' => 'N',

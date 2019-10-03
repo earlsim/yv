@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 /*=============================================
 =                   ##MAIN                    =
@@ -96,7 +96,7 @@
 .location div ul li {float:left; margin-right:14px;}
 .location div ul li:last-child {margin-right:0; border-bottom:1px solid #d0d0d0;}
 .location div ul li img {vertical-align:top;}
-.location div ul li p {font-size:.6rem; color:#999; line-height:1.1;}
+.location div ul li p {font-size:.6rem; color:#999; line-height:1.5;font-weight: 300;}
 .location div ul li.home {padding-top:2px;}
 .location div ul li.home, .location div ul li.step {height:17px; line-height:17px; border:0;}
 

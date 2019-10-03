@@ -26,7 +26,7 @@ $this->setFrameMode(true);?>
                     <div class="item-loc"><?echo($arItem["PROPERTIES"]["CITY"]["VALUE"])?></div>
                 </div>
                 <div class="item-bottom">
-                    <?echo($arItem["PROPERTIES"]["TIME"]["NAME"]);?>&#32;<?echo($arItem["PROPERTIES"]["TIME"]["VALUE"])?>
+                    <?echo($arItem["PROPERTIES"]["TIME"]["NAME"]);?>&#32;в&#32;<?echo($arItem["PROPERTIES"]["TIME"]["VALUE"])?>
                 </div>
             </div>
         <?endforeach;?>

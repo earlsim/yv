@@ -122,7 +122,7 @@ $this->addExternalCss($this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].
             </div>
 		<?endif;?>
         <div class="item-bottom">
-            <?echo($arItem["PROPERTIES"]["TIME"]["NAME"]);?>&#32;<?echo($arItem["PROPERTIES"]["TIME"]["VALUE"])?>
+            <?echo($arItem["PROPERTIES"]["TIME"]["NAME"]);?>&#32;в&#32;<?echo($arItem["PROPERTIES"]["TIME"]["VALUE"])?>
         </div>
 
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>

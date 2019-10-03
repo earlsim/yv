@@ -1,12 +1,14 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><? /* */ ?>
+
+
     <div class="container subPage ctx_seminar">
         <div class="sub_visual">
             <div class="visual_content">
                 <div class="inner">
                     <h2 class="seminar-title">Курсы косметологии</h2>
-                    <h3 class="sub-title">Lorem ipsum</h3>
+                    <h3 class="sub-title"></h3>
                     <span class="page_navi left"><a href="/lgchem/" title="lgchem page"><img alt="ЛЕВАЯ СТРАНИЦА"
                                                                                              src="/local/templates/yvoire/images/icon/page_navigator_left.png"></a></span>
                     <span class="page_navi right"><a href="/whyyvoire/" title="why yvoire"><img alt="ПРАВАЯ СТРАНИЦА"
@@ -19,11 +21,13 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                 <div class="inner">
                     <div>
                         <ul>
-                            <li class="home"><img alt="На главную" src="/local/templates/yvoire/images/icon/location.png"></li>
+                            <li class="home"><a href="/"><img alt="На главную" src="/local/templates/yvoire/images/icon/location.png"></a></li>
                             <li>
-                                <p>
+                                <a href="/">
+                                    <p>
                                     YVOIRE
-                                </p>
+                                    </p>
+                                </a>
                             </li>
                             <li class="step">
                                 <p>
@@ -101,8 +105,15 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                         "PAGER_TITLE" => "Новости",
                         "PERIOD_NEW_TAGS" => "",
                         "PREVIEW_TRUNCATE_LEN" => "",
+                        "SEF_FOLDER" => "",
                         "SEF_MODE" => "N",
+                        "SEF_URL_TEMPLATES" => array(
+                            "news" => "",
+                            "section" => "",
+                            "detail" => "#CODE#",
+                        ),
                         "SET_LAST_MODIFIED" => "N",
+                        "SECTION_ID" => "ID",
                         "SET_STATUS_404" => "N",
                         "SET_TITLE" => "N",
                         "SHOW_404" => "N",
@@ -122,7 +133,7 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                         "USE_RSS" => "N",
                         "USE_SEARCH" => "N",
                         "USE_SHARE" => "N",
-                        "VARIABLE_ALIASES" => Array("ELEMENT_ID" => "news_item", "SECTION_ID" => "SECTION_ID")
+                        "VARIABLE_ALIASES" => Array("ELEMENT_ID" => "ELEMENT_ID", "SECTION_ID" => "SECTION_ID","ELEMENT_CODE" => "ELEMENT_CODE","CODE" => "CODE")
                     )
                 ); ?>
                 <article class="intern">
@@ -139,6 +150,7 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                                     Все, кто работают в индустрии красоты, хорошо знают, что опыт и профессионализм управляющих салона красоты или клиники
                                     эстетической медицины напрямую определяют успех всей организации, а значит, и ее прибыльность.
                                 </p>
+                                <br>
                                 <p class="text">
                                     Эксперты "Академии Научной Красоты" готовы поделиться с вами своими знаниями и профессиональными секретами. Мы приглашаем
                                     вас не только пройти курсы обучения, но и приятно провести свободное от учебы время, насладиться культурой и кухней других
@@ -192,7 +204,93 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                                     "CACHE_TIME" => $arParams["CACHE_TIME"],
                                     "CACHE_TYPE" => "N",
                                     "CHECK_DATES" => "N",
-                                    "DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["detail"],
+                                    "DETAIL_URL" => "",
+                                    "DISPLAY_AS_RATING" => $arParams["DISPLAY_AS_RATING"],
+                                    "DISPLAY_BOTTOM_PAGER" => "N",
+                                    "DISPLAY_DATE" => "N",
+                                    "DISPLAY_NAME" => "Y",
+                                    "DISPLAY_PICTURE" => "N",
+                                    "DISPLAY_PREVIEW_TEXT" => "N",
+                                    "DISPLAY_TOP_PAGER" => "N",
+                                    "FIELD_CODE" => array("ID","DESCRIPTION", "TIME", "LOCATION"),
+                                    "FILE_404" => $arParams["FILE_404"],
+                                    "FILTER_NAME" => "$arFilter",
+                                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                                    "IBLOCK_ID" => "7",
+                                    "IBLOCK_TYPE" => "internship",
+                                    "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
+                                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                                    "INCLUDE_SUBSECTIONS" => "Y",
+                                    "MAX_VOTE" => $arParams["MAX_VOTE"],
+                                    "MEDIA_PROPERTY" => $arParams["MEDIA_PROPERTY"],
+                                    "MESSAGE_404" => $arParams["MESSAGE_404"],
+                                    "NEWS_COUNT" => 8,
+                                    "PAGER_BASE_LINK" => $arParams["PAGER_BASE_LINK"],
+                                    "PAGER_BASE_LINK_ENABLE" => "N",
+                                    "PAGER_DESC_NUMBERING" => "N",
+                                    "PAGER_DESC_NUMBERING_CACHE_TIME" => $arParams["PAGER_DESC_NUMBERING_CACHE_TIME"],
+                                    "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
+                                    "PAGER_SHOW_ALL" => "N",
+                                    "PAGER_SHOW_ALWAYS" => "N",
+                                    "PAGER_TEMPLATE" => $arParams["PAGER_TEMPLATE"],
+                                    "PAGER_TITLE" => $arParams["PAGER_TITLE"],
+                                    "PARENT_SECTION" => "",
+                                    "PARENT_SECTION_CODE" => "",
+                                    "PREVIEW_TRUNCATE_LEN" => $arParams["PREVIEW_TRUNCATE_LEN"],
+                                    "PROPERTY_CODE" => array("DATE", "CITY", "={$arParams["LIST_PROPERTY_CODE"]}", ""),
+                                    "SEARCH_PAGE" => ($arParams["USE_SEARCH"] == "Y" ? $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["search"] : ''),
+                                    "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+                                    "SET_BROWSER_TITLE" => "Y",
+                                    "SET_LAST_MODIFIED" => "N",
+                                    "SET_META_DESCRIPTION" => "Y",
+                                    "SET_META_KEYWORDS" => "Y",
+                                    "SET_STATUS_404" => "N",
+                                    "SET_TITLE" => "N",
+                                    "SHARE_HANDLERS" => $arParams["SHARE_HANDLERS"],
+                                    "SHARE_HIDE" => $arParams["SHARE_HIDE"],
+                                    "SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
+                                    "SHARE_SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
+                                    "SHARE_TEMPLATE" => $arParams["SHARE_TEMPLATE"],
+                                    "SHOW_404" => "N",
+                                    "SLIDER_PROPERTY" => $arParams["SLIDER_PROPERTY"],
+                                    "SORT_BY1" => "ACTIVE_FROM",
+                                    "SORT_BY2" => $arParams["SORT_BY2"],
+                                    "SORT_ORDER1" => "DESC",
+                                    "SORT_ORDER2" => $arParams["SORT_ORDER2"],
+                                    "STRICT_SECTION_CHECK" => "N",
+                                    "TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
+                                    "USE_RATING" => $arParams["USE_RATING"],
+                                    "USE_SHARE" => $arParams["LIST_USE_SHARE"],
+                                    "VOTE_NAMES" => $arParams["VOTE_NAMES"]
+                                ),
+                                $component
+                            ); ?>
+                        </div>
+                    </section>
+                </article>
+                <article class="last-events">
+                    <div class="block-title al-center">
+                        Прошедшие стажировки
+                    </div>
+                    <section class="last-list">
+                        <div class="grid-list">
+                            <? $APPLICATION->IncludeComponent(
+                                "yvoir:news.list",
+                                "last_events",
+                                Array(
+                                    "ACTIVE_DATE_FORMAT" => $arParams["LIST_ACTIVE_DATE_FORMAT"],
+                                    "ADD_SECTIONS_CHAIN" => "N",
+                                    "AJAX_MODE" => "N",
+                                    "AJAX_OPTION_ADDITIONAL" => "",
+                                    "AJAX_OPTION_HISTORY" => "N",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "Y",
+                                    "CACHE_FILTER" => "N",
+                                    "CACHE_GROUPS" => "N",
+                                    "CACHE_TIME" => $arParams["CACHE_TIME"],
+                                    "CACHE_TYPE" => "N",
+                                    "CHECK_DATES" => "Y",
+                                    "DETAIL_URL" => "",
                                     "DISPLAY_AS_RATING" => $arParams["DISPLAY_AS_RATING"],
                                     "DISPLAY_BOTTOM_PAGER" => "N",
                                     "DISPLAY_DATE" => "N",
@@ -204,8 +302,8 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                                     "FILE_404" => $arParams["FILE_404"],
                                     "FILTER_NAME" => $arParams["FILTER_NAME"],
                                     "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                                    "IBLOCK_ID" => "4",
-                                    "IBLOCK_TYPE" => "EVENTS",
+                                    "IBLOCK_ID" => "7",
+                                    "IBLOCK_TYPE" => "internship",
                                     "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
                                     "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                                     "INCLUDE_SUBSECTIONS" => "Y",
@@ -256,166 +354,105 @@ $APPLICATION->SetTitle(""); ?><? $APPLICATION->SetTitle("Семинары"); ?><
                         </div>
                     </section>
                 </article>
-                <article class="last-events">
-                    <div class="block-title al-center">
-                        Прошедшие стажировки
-                    </div>
-                    <section class="last-list">
-                        <div class="grid-list">
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Россия, Москва | сентябрь 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Программы профессиональной переподготовки</a>
-                                </div>
-                            </div>
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Ирландия, Дублин | с 11 по 16 июля 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Стажировка в Дублине</a>
-                                </div>
-                            </div>
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Россия, Москва | сентябрь 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Программы профессиональной переподготовки</a>
-                                </div>
-                            </div>
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Ирландия, Дублин | с 11 по 16 июля 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Стажировка в Дублине</a>
-                                </div>
-                            </div>
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Россия, Москва | сентябрь 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Программы профессиональной переподготовки</a>
-                                </div>
-                            </div>
-                            <div class="grid-list__item">
-                                <div class="grid-item__title">
-                                    Ирландия, Дублин | с 11 по 16 июля 2019 года
-                                </div>
-                                <div class="grid-item__link text">
-                                    <a href="">Стажировка в Дублине</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </article>
                 <article class="speakers">
-                    <div class="block-title al-center">
+                    <div class="block-title al-center block-title--mt0">
                         Семинары и стажировки проводят
                     </div>
                     <section class="speakers-block">
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speakers-block__card speakers-card">
-                            <div class="speakers-card__pic">
-                                <img src="/local/templates/yvoire/images/sub/seminar/female.jpg" alt="">
-                            </div>
-                            <div class="speakers-card__content">
-                                <div class="card-content__title">
-                                    Бителева Наталия Евгеньевна
-                                </div>
-                                <div class="card-content__text text">
-                                    Врач-дерматолог, косметолог, физиотерапевт, тренер по лазерным системам Palomar, контурной коррекции, мезотерапии и
-                                    биоревитализации, г. Москва
-                                </div>
-                            </div>
-                        </div>
+                        <?  $APPLICATION->IncludeComponent(
+                                "yvoir:news.list",
+                                "doctors_list",
+                                Array(
+                                    "ACTIVE_DATE_FORMAT" => $arParams["LIST_ACTIVE_DATE_FORMAT"],
+                                    "ADD_SECTIONS_CHAIN" => "N",
+                                    "AJAX_MODE" => "N",
+                                    "AJAX_OPTION_ADDITIONAL" => "",
+                                    "AJAX_OPTION_HISTORY" => "N",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "Y",
+                                    "CACHE_FILTER" => "N",
+                                    "CACHE_GROUPS" => "N",
+                                    "CACHE_TIME" => $arParams["CACHE_TIME"],
+                                    "CACHE_TYPE" => "N",
+                                    "CHECK_DATES" => "N",
+                                    "DETAIL_URL" => "",
+                                    "DISPLAY_AS_RATING" => $arParams["DISPLAY_AS_RATING"],
+                                    "DISPLAY_BOTTOM_PAGER" => "N",
+                                    "DISPLAY_DATE" => "N",
+                                    "DISPLAY_NAME" => "Y",
+                                    "DISPLAY_PICTURE" => "N",
+                                    "DISPLAY_PREVIEW_TEXT" => "N",
+                                    "DISPLAY_TOP_PAGER" => "N",
+                                    "FIELD_CODE" => array("PROPERTY_DOCTOR_PIC", "PROPERTY_DOCTOR_INFO"),
+                                    "FILE_404" => $arParams["FILE_404"],
+                                    "FILTER_NAME" => $arParams["FILTER_NAME"],
+                                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                                    "IBLOCK_ID" => "5",
+                                    "IBLOCK_TYPE" => "DOCTORS",
+                                    "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
+                                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                                    "INCLUDE_SUBSECTIONS" => "Y",
+                                    "MAX_VOTE" => $arParams["MAX_VOTE"],
+                                    "MEDIA_PROPERTY" => $arParams["MEDIA_PROPERTY"],
+                                    "MESSAGE_404" => $arParams["MESSAGE_404"],
+                                    "NEWS_COUNT" => 4,
+                                    "PAGER_BASE_LINK" => $arParams["PAGER_BASE_LINK"],
+                                    "PAGER_BASE_LINK_ENABLE" => "N",
+                                    "PAGER_DESC_NUMBERING" => "N",
+                                    "PAGER_DESC_NUMBERING_CACHE_TIME" => $arParams["PAGER_DESC_NUMBERING_CACHE_TIME"],
+                                    "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
+                                    "PAGER_SHOW_ALL" => "N",
+                                    "PAGER_SHOW_ALWAYS" => "N",
+                                    "PAGER_TEMPLATE" => $arParams["PAGER_TEMPLATE"],
+                                    "PAGER_TITLE" => $arParams["PAGER_TITLE"],
+                                    "PARENT_SECTION" => "",
+                                    "PARENT_SECTION_CODE" => "",
+                                    "PREVIEW_TRUNCATE_LEN" => $arParams["PREVIEW_TRUNCATE_LEN"],
+                                    "PROPERTY_CODE" => array("DOCTOR_INFO", "DOCTOR_PIC"),
+                                    "SEARCH_PAGE" => ($arParams["USE_SEARCH"] == "Y" ? $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["search"] : ''),
+                                    "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+                                    "SET_BROWSER_TITLE" => "Y",
+                                    "SET_LAST_MODIFIED" => "N",
+                                    "SET_META_DESCRIPTION" => "Y",
+                                    "SET_META_KEYWORDS" => "Y",
+                                    "SET_STATUS_404" => "N",
+                                    "SET_TITLE" => "N",
+                                    "SHARE_HANDLERS" => $arParams["SHARE_HANDLERS"],
+                                    "SHARE_HIDE" => $arParams["SHARE_HIDE"],
+                                    "SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
+                                    "SHARE_SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
+                                    "SHARE_TEMPLATE" => $arParams["SHARE_TEMPLATE"],
+                                    "SHOW_404" => "N",
+                                    "SLIDER_PROPERTY" => $arParams["SLIDER_PROPERTY"],
+                                    "SORT_BY1" => "ACTIVE_FROM",
+                                    "SORT_BY2" => $arParams["SORT_BY2"],
+                                    "SORT_ORDER1" => "DESC",
+                                    "SORT_ORDER2" => $arParams["SORT_ORDER2"],
+                                    "STRICT_SECTION_CHECK" => "N",
+                                    "TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
+                                    "USE_RATING" => $arParams["USE_RATING"],
+                                    "USE_SHARE" => $arParams["LIST_USE_SHARE"],
+                                    "VOTE_NAMES" => $arParams["VOTE_NAMES"]
+                                ),
+                                $component
+                        );?>
                     </section>
                 </article>
                 <article class="legal">
-                    <div class="block-title block-title--mb30 al-left">
-                        Правовая информация
-                    </div>
-                    <div class="text">
-                        Обучение в г. Москве осуществляется Учебным Центром ООО «Академия научной красоты-Москва»<br>
+                    <div class="block-title block-title--mb30 al-left">Правовая информация</div>
+                    <div class="text">Обучение в г. Москве осуществляется Учебным Центром ООО «Академия научной красоты-Москва»<br>
                         Лицензия на образовательную деятельность №037916 от 29.09.2016 г.
                     </div>
                     <ul class="legal-docs">
-                        <li class="legal-docs__item text"><a href="#"></a>Устав образовательной организации</li>
-                        <li class="legal-docs__item text"><a href="#"></a>Лицензия на осуществление образовательной деятельности</li>
-                        <li class="legal-docs__item text"><a href="#"></a>Свидетельство о государственной регистрации</li>
+                        <li class="legal-docs__item text">
+                            <a href="#"><span></span></a>Устав образовательной организации
+                        </li>
+                        <li class="legal-docs__item text">
+                            <a href="#"><span></span></a>Лицензия на осуществление образовательной деятельности
+                        </li>
+                        <li class="legal-docs__item text">
+                            <a href="#"><span></span></a>Свидетельство о государственной регистрации
+                        </li>
                     </ul>
                 </article>
             </div>

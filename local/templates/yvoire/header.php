@@ -12,9 +12,10 @@
 		<!-- css file load -->
 		
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/common.css");?>
+		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/jquery.fancybox.css");?>
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/sub.css");?>
 		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/mediaQuery.css")?>
-		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/seminar.css")?>
+		<?Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/styles.css")?>
 
         <!-- js file load -->
         
@@ -26,6 +27,7 @@
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/jquery.vEllipsis.min.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/instafeed.min.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/social.js");?>
+        <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/lib/jquery.fancybox.pack.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/datepicker-ru.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/common.js");?>
         <?Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/yLoader.js");?>
@@ -39,6 +41,23 @@
     </head>
     <?$APPLICATION->ShowPanel();?>
         <body>
+        <script type="text/javascript">
+            $(".popup").click(function(e) {
+                e.preventDefault();
+            });
+            $(function() {
+                $('a.popup').fancybox({
+                    'overlayShow': false,
+                    'padding': 0,
+                    'margin' : 0,
+                    "maxWidth" : "600px",
+                    "scrolling" : "auto",
+                    'titleShow' : false,
+                    'type': 'ajax',
+                    'href': '/ajax_popup.php'
+                });
+            });
+        </script>
     <!-- wrap -->
 	<div class="wrap">
         <!-- header -->

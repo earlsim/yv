@@ -126,20 +126,20 @@ $APPLICATION->SetTitle("Review");
 						<div class="change_conbox">
 							<div class="tabScroll">
                                 <ul>
-                                    <li class="active"><a href="javascript:;"> <img alt="Forehead Augmentation"
+                                    <li class="active"><a href="javascript:;"> <img alt="Аугментация лба"
                                                                                     src="/local/templates/yvoire/images/sub/beforeafter/tab_list00.png"> <img
                                                     alt="show this contents" src="/local/templates/yvoire/images/sub/beforeafter/list_on.png" class="liston">
                                             <p>
-                                                Forehead<br>
-                                                Augmentation
+                                                Аугментация<br>
+                                                лба
                                             </p>
                                         </a></li>
                                     <li><a href="javascript:;"> <img alt="Nose Augmentation"
                                                                      src="/local/templates/yvoire/images/sub/beforeafter/tab_list01.png"> <img
                                                     alt="show this contents" src="/local/templates/yvoire/images/sub/beforeafter/list_on.png" class="liston">
                                             <p>
-                                                Nose<br>
-                                                Augmentation
+                                                Аугментация<br>
+                                                носа
                                             </p>
                                         </a></li>
                                     <li><a href="javascript:;"> <img alt="Tear Trough" src="/local/templates/yvoire/images/sub/beforeafter/tab_list02.png"> <img
